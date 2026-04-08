@@ -1,0 +1,156 @@
+:root {
+  --primary-color: #646cff;
+  --bg-dark: #121212;
+  --card-bg: #1e1e1e;
+  --text-light: #e0e0e0;
+  --border-radius: 8px;
+  --accent-green: #4caf50;
+  --accent-blue: #2196f3;
+}
+
+body {
+  background-color: var(--bg-dark);
+  color: var(--text-light);
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.app-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.header {
+  text-align: center;
+  margin-bottom: 3rem;
+  border-bottom: 1px solid #333;
+  padding-bottom: 1rem;
+}
+
+.main-content {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 3rem;
+}
+
+/* FORM STYLING */
+.form-section {
+  background: var(--card-bg);
+  padding: 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 4px 20px rgba(0,0,0,0.3);
+  height: fit-content;
+}
+
+.task-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+
+input, textarea, select {
+  padding: 0.8rem;
+  border-radius: 4px;
+  border: 1px solid #444;
+  background-color: #2a2a2a;
+  color: white;
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.form-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.input-group {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+label {
+  font-size: 0.8rem;
+  margin-bottom: 0.3rem;
+  color: #aaa;
+}
+
+.submit-btn {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: opacity 0.2s;
+}
+
+.submit-btn:hover {
+  opacity: 0.8;
+}
+
+/* DASHBOARD STYLING */
+.task-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.task-card {
+  background: var(--card-bg);
+  padding: 1.5rem;
+  border-radius: var(--border-radius);
+  border-left: 5px solid var(--accent-blue);
+  position: relative;
+  transition: transform 0.2s;
+}
+
+.task-card:hover {
+  transform: translateX(5px);
+}
+
+.status-badge {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 0.7rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 12px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.status-badge.pending { background-color: #ff9800; color: #000; }
+.status-badge.completed { background-color: var(--accent-green); color: white; }
+
+.task-desc {
+  color: #bbb;
+  margin: 1rem 0;
+}
+
+.task-meta {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+  border-top: 1px solid #333;
+  padding-top: 1rem;
+  color: #888;
+}
+
+.footer {
+  text-align: center;
+  margin-top: 4rem;
+  font-size: 0.8rem;
+  color: #555;
+}
+
+@media (max-width: 900px) {
+  .main-content {
+    grid-template-columns: 1fr;
+  }
+}

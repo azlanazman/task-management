@@ -1,0 +1,29 @@
+[
+  {
+    "id": "task-1",
+    "title": "Welcome Task",
+    "description": "This is a sample task to get you started.",
+    "deadline": "2026-04-30",
+    "owner": "HOD",
+    "unit": "Unit A",
+    "status": "Pending"
+  },
+  {
+    "id": "task-2",
+    "title": "Setup Project",
+    "description": "Initialize the project and its structure.",
+    "deadline": "2026-04-10",
+    "owner": "Azlan",
+    "unit": "Unit B",
+    "status": "Completed"
+  },
+  {
+    "id": "task-1775616165716",
+    "title": "Assessment Review",
+    "description": "to check each units assessment review",
+    "deadline": "2026-04-10",
+    "owner": "Azlan",
+    "unit": "Unit A",
+    "status": "Pending"
+  }
+]
